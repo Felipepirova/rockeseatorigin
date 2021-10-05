@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -138,13 +144,14 @@
       <div class="divider-1"></div>
 
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
-          <div class="testimonials">
-            <div class="">
-              <div class="testimonial">
+
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
                 <blockquote>
                   <p>
                     <span> &ldquo; </span>
@@ -162,7 +169,7 @@
                   </cite>
                 </blockquote>
               </div>
-              <div class="testimonial">
+              <div class="testimonial swiper-slide">
                 <blockquote>
                   <p>
                     <span> &ldquo; </span>
@@ -180,7 +187,7 @@
                   </cite>
                 </blockquote>
               </div>
-              <div class="testimonial">
+              <div class="testimonial swiper-slide">
                 <blockquote>
                   <p>
                     <span> &ldquo; </span>
@@ -203,6 +210,8 @@
         </div>
       </section>
     </main>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
